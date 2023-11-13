@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         blackText: "#292929",
-        myGreen:"#1FD464"
+        myGreen:"#1FD464",
+        myOrange:"#FF9066",
       },
     },
   },
