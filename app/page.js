@@ -1,4 +1,3 @@
-import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Partners from './components/Partners'
 import About from './components/About'
@@ -7,13 +6,11 @@ import Projects from './components/Projects'
 import Expertice from './components/Expertice'
 import Articles from './components/Articles'
 import AnyProject from './components/AnyProject'
-import Footer from './components/Footer'
 
 
 export default function Home() {
   return (
     <div style={{fontFamily:'Poppins'}} >
-      <Navbar/>
       <Hero/>
       <Partners/>
       <About/>
@@ -22,7 +19,6 @@ export default function Home() {
       <Expertice/>
       <Articles/>
       <AnyProject/>
-      <Footer/>
     </div>
   )
 }

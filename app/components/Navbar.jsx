@@ -13,20 +13,20 @@ export default function Navbar() {
                     <Image src={logo} layout='fill' />
                 </div>
                 {/* navigation */}
-                <ul className='flex space-x-12 text-sm text-blackText'>
-                    <li className=''>
+                <ul className='flex space-x-12 text-sm'>
+                    <li className='text-myGreen'>
                         <Link href='/'>Home</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out'>
+                    <li className='opacity-70  transition duration-300 ease-out hover:opacity-100 hover:text-myGreen'>
                         <Link href='/'>About Me</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out' >
+                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen' >
                         <Link href='/'>Services</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out' >
+                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen' >
                         <Link href='/'>Projects</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out' >
+                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen ' >
                         <Link href='/'>Blogs</Link>
                     </li>
                 </ul>
