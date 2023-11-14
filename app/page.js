@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Partners from './components/Partners'
@@ -7,10 +6,13 @@ import Services from './components/Services'
 import Projects from './components/Projects'
 import Expertice from './components/Expertice'
 import Articles from './components/Articles'
+import AnyProject from './components/AnyProject'
+import Footer from './components/Footer'
+
 
 export default function Home() {
   return (
-    <div>
+    <div style={{fontFamily:'Poppins'}} >
       <Navbar/>
       <Hero/>
       <Partners/>
@@ -19,6 +21,8 @@ export default function Home() {
       <Projects/>
       <Expertice/>
       <Articles/>
+      <AnyProject/>
+      <Footer/>
     </div>
   )
 }
