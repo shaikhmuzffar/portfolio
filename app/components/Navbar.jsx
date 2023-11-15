@@ -4,6 +4,7 @@ import logo from '../assets/logo.png'
 import Link from 'next/link'
 import Button from '../components/Button'
 
+
 export default function Navbar() {
     return (
         <div className='fixed top-0 w-full flex items-center h-[90px] z-10 bg-white shadow-lg'>
@@ -24,7 +25,7 @@ export default function Navbar() {
                         <Link href='/'>Services</Link>
                     </li>
                     <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen' >
-                        <Link href='/'>Projects</Link>
+                        <Link href='/projects'>Projects</Link>
                     </li>
                     <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen ' >
                         <Link href='/'>Blogs</Link>
