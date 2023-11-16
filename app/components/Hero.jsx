@@ -31,7 +31,7 @@ export default function Hero() {
                                     </div>
                                 </div>
                                 {/* name */}
-                                <h1 className='text-[70px] text-blackText leading-[60px]  font-[600]'>I'm Muzaffar</h1>
+                                <h1 className='text-[70px] text-blackText leading-[60px]  font-[600]'>Im Muzaffar</h1>
                             </div>
                             {/* bio */}
                             <p className='text-blackText leading-6 w-[350px]' >I dont really like talking about myself, but of my projects, which you can see here by clicking on them below</p>
