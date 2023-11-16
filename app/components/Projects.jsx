@@ -1,20 +1,19 @@
 import React from 'react'
 import SectionHeading from './SectionHeading'
 import Image from 'next/image'
-
-// images
 import arrowRight from '../assets/arrowRight.png'
 import arrowLeft from '../assets/arrowLeft.png'
-import dorukoThumb from '../assets/dorukoThumb.png'
+import dorukoProThumb from '../assets/dorukoThumb.png'
 import grocifyThumb from '../assets/grocifyThumb.png'
 import touroThumb from '../assets/touroThumb.png'
 import react from '../assets/react.png'
 import redux from '../assets/redux.png'
 import figma from '../assets/figma.png'
 
+
 const myProjects = [
     {
-        img: dorukoThumb,
+        img: dorukoProThumb,
         title: 'Doruko',
         description: 'A Food Delivery Website and UI/UX.',
         url: 'https://doruko.netlify.app/',
