@@ -10,10 +10,10 @@ import heroImg from '../assets/heroImg.png'
 
 export default function Hero() {
     return (
-        <div className='h-screen flex items-end bg-[#f5f8f9]'>
-            <div className='flex  flex-col-reverse md:flex-row w-full max-w-[83.333333%] mx-auto justify-between'>
+        <div className=' h-screen flex items-end bg-[#f5f8f9]'>
+            <div className='flex  flex-col md:flex-row w-full max-w-[83.333333%] mx-auto justify-between'>
                 {/* left  */}
-                <div className='flex flex-col justify-center space-y-4'>
+                <div className='flex  flex-col justify-center space-y-4'>
                     {/* subtitle */}
                     <div className='flex items-center space-x-1'>
                         <span>I'm a full stack Web Developer</span>

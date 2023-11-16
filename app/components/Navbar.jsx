@@ -8,7 +8,7 @@ import hamburger from '../assets/hamburger.png'
 
 export default function Navbar() {
     return (
-        <div className='fixed top-0 w-full flex items-center h-[90px] z-10 bg-white shadow-lg'>
+        <div className=' md:fixed md:top-0 md:w-full flex items-center h-[90px] z-10 bg-white shadow-lg'>
             <div className='w-full max-w-[83.333333%] mx-auto  flex justify-between items-center'>
                 {/* logo */}
                 <div className='relative h-6 w-[120px] object-contain '>

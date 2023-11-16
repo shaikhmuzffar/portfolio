@@ -18,7 +18,7 @@ export default function
 
                 <div className='grid text-blackText gap-[30px] grid-cols-12' >
                     {/* column1 */}
-                    <div className='col-span-4 flex flex-col space-y-5'>
+                    <div className='col-span-12 md:col-span-6 lg:col-span-4 flex flex-col space-y-5'>
                         <div className='relative h-12 w-[131px]' >
                             <Image src={logo} layout='fill' objectFit='contain' alt="logo" />
                         </div>
@@ -45,7 +45,7 @@ export default function
                     </div>
 
                     {/* column2 */}
-                    <div className='col-span-2  flex flex-col space-y-5' >
+                    <div className='col-span-12 md:col-span-6 lg:col-span-2  flex flex-col space-y-5' >
                         <h1 className='text-[18px] font-semibold text-blackText' >Navigation</h1>
                         <ul className='flex flex-col space-y-4 '>
                             <li>
@@ -67,7 +67,7 @@ export default function
                     </div>
 
                     {/* column3 */}
-                    <div className='col-span-2  flex flex-col space-y-5' >
+                    <div className='col-span-12 md:col-span-6 lg:col-span-2  flex flex-col space-y-5' >
                         <h1 className='text-[18px] font-semibold' >Products</h1>
                         <ul className='flex flex-col space-y-4 '>
                             <li>
@@ -82,7 +82,7 @@ export default function
                         </ul>
                     </div>
                     {/* column3 */}
-                    <div className='col-span-2  flex flex-col space-y-5' >
+                    <div className='col-span-12 md:col-span-6 lg:col-span-2  flex flex-col space-y-5' >
                         <h1 className='text-[18px] font-semibold' >Compony</h1>
                         <ul className='flex flex-col space-y-4 '>
                             <li>

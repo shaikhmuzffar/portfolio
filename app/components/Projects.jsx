@@ -101,11 +101,11 @@ export default function Projects() {
                     </div>
                 </div>
                 {/* projects */}
-                <div className='grid grid-cols-3 gap-5'>
+                <div className='grid grid-cols-12 gap-5'>
                     {/* single project */}
                     {
                         myProjects.map(({ img, title, description, tech }) =>
-                            <div className='relative h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
+                            <div className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
                                 <Image src={img} layout='fill' objectFit='cover' />
                                 {/* overlay */}
                                 <div className='absolute h-full w-full bg-black opacity-20 top-0 left-0' ></div>

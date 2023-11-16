@@ -8,9 +8,9 @@ import gramin from '../assets/gramin.png'
 
 export default function Partners() {
     return (
-        <div className='flex flex-col space-y-[30px] items-center justify-center mt-[90px]'>
+        <div className='flex w-10/12 mx-auto flex-col space-y-[30px] items-center justify-center mt-[90px]'>
             <h1 className='text-[24px] font-[600] text-blackText'>Proud marketing partner with</h1>
-            <div className='flex space-x-12' >
+            <div className='flex flex-wrap items-center  justify-center gap-12' >
                 <div className='relative h-8 w-[102px] object-contain '>
                     <Image src={spotify} layout='fill' />
                 </div>
