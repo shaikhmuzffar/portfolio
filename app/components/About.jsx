@@ -93,7 +93,7 @@ export default function About() {
                 {/* img */}
                 <div className='col-span-12 md:col-span-6 lg:col-span-5  flex items-center justify-center'>
                     <div className=' relative w-[440px]  h-[400px] '>
-                        <Image src={aboutImg} layout='fill' objectFit='contain' />
+                        <Image src={aboutImg} layout='fill' objectFit='contain'alt='aboutImg' />
                     </div>
                 </div>
 

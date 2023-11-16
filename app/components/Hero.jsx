@@ -16,7 +16,7 @@ export default function Hero() {
                 <div className='flex  flex-col justify-center space-y-4'>
                     {/* subtitle */}
                     <div className='flex items-center space-x-1'>
-                        <span>I'm a full stack Web Developer</span>
+                        <span>Im a full stack Web Developer</span>
                         <span>🚀</span>
                     </div>
                     <div className='flex flex-col space-y-11'>
@@ -26,8 +26,8 @@ export default function Hero() {
                                 {/* greeting and handwave */}
                                 <div className='flex items-center space-x-5 ' >
                                     <h1 className='text-[80px] text-blackText font-[600]  leading-[66px] '>Hello</h1>
-                                    <div className='relative h-[80px] w-[90px] object-contain'>
-                                        <Image src={handWave} layout="fill" alt="handWave" />
+                                    <div className='relative h-[80px] w-[90px] '>
+                                        <Image src={handWave} layout="fill" alt="handWave" objectFit='contain' />
                                     </div>
                                 </div>
                                 {/* name */}
@@ -44,8 +44,8 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* right */}
-                <div className='relative  h-[500px] w-[500px] object-contain'>
-                    <Image src={heroImg} layout="fill" alt="handWave" />
+                <div className='relative  h-[500px] w-[500px] '>
+                    <Image src={heroImg} layout="fill" alt="handWave" objectFit='contain'  />
                 </div>
             </div>
         </div>

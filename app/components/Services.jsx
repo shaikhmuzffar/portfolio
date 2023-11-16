@@ -39,8 +39,8 @@ export default function Services() {
             services.map(service =>
               <div className='flex items-center flex-col' key={service.id} >
                 {/* serviceImg */}
-                <div className='relative  h-[150px] w-[150px] object-contain'>
-                  <Image src={service.img} layout='fill' alt={service.title} />
+                <div className='relative  h-[150px] w-[150px] '>
+                  <Image src={service.img} layout='fill' alt={service.title} objectFit='contain' />
                 </div>
                 {/* serviceInfo */}
                 <div className='space-y-[15px] text-center'>

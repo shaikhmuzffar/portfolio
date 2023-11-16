@@ -11,8 +11,8 @@ export default function Navbar() {
         <div className=' md:fixed md:top-0 md:w-full flex items-center h-[90px] z-10 bg-white shadow-lg'>
             <div className='w-full max-w-[83.333333%] mx-auto  flex justify-between items-center'>
                 {/* logo */}
-                <div className='relative h-6 w-[120px] object-contain '>
-                    <Image src={logo} layout='fill' />
+                <div className='relative h-6 w-[120px]  '>
+                    <Image src={logo} layout='fill' alt='logo' objectFit='contain' />
                 </div>
                 {/* navigation */}
                 <ul className=' hidden md:flex space-x-12 text-sm'>
@@ -37,7 +37,7 @@ export default function Navbar() {
                     <span>Contact</span>
                 </Button>
                 <div className='relative h-6 w-6 md:hidden ' >
-                    <Image src={hamburger} layout='fill' objectFit='contain'  ></Image>
+                    <Image src={hamburger} layout='fill' objectFit='contain' alt='hamburger'  ></Image>
                 </div>
             </div>
         </div>

@@ -12,8 +12,8 @@ export default function SectionHeading({ subTitle, title1, title2, centerTitle})
             {/* subTitle */}
             <div className={`flex items-center ${centerTitle ? 'justify-center' : ''} space-x-3`}>
                 {/*orangeMark  */}
-                <div className='relative  h-[25px] w-[25px] object-contain'>
-                    <Image src={orangeMark} layout='' />
+                <div className='relative  h-[25px] w-[25px] '>
+                    <Image src={orangeMark} layout='fill' objectFit='contain' alt='mark' />
                 </div>
                 <span className='text-sm text-myOrange' >{subTitle}</span>
             </div>
