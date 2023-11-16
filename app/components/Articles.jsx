@@ -5,7 +5,6 @@ import Image from 'next/image'
 // images
 import arrowRight from '../assets/arrowRight.png'
 import arrowLeft from '../assets/arrowLeft.png'
-import dorukoThumb from '../assets/dorukoThumb.png'
 import articleImg1 from '../assets/articleImg1.png'
 import articleImg2 from '../assets/articleImg2.png'
 import articleImg3 from '../assets/articleImg3.png'
