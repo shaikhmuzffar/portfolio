@@ -3,6 +3,7 @@ import React from 'react'
 import logo from '../assets/logo.png'
 import Link from 'next/link'
 import Button from '../components/Button'
+import hamburger from '../assets/hamburger.png'
 
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
                     <Image src={logo} layout='fill' />
                 </div>
                 {/* navigation */}
-                <ul className='flex space-x-12 text-sm'>
+                <ul className=' hidden md:flex space-x-12 text-sm'>
                     <li className='text-myGreen'>
                         <Link href='/'>Home</Link>
                     </li>
@@ -32,9 +33,12 @@ export default function Navbar() {
                     </li>
                 </ul>
                 {/* button */}
-                <Button>
+                <Button className=" hidden md:flex" >
                     <span>Contact</span>
                 </Button>
+                <div className='relative h-6 w-6 md:hidden ' >
+                    <Image src={hamburger} layout='fill' objectFit='contain'  ></Image>
+                </div>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ export default function AnyProject() {
             <Image src={worldMap} layout='fill' objectFit='contain' alt='worldMap' />
             <div className=' z-[5] flex items-center justify-center flex-col space-y-[45px]' >
                 <h1 className='text-2xl font-semibold text-myGreen' >Do you have Any Project?</h1>
-                <Button>
+                <Button className=" hidden md:flex" >
                     <span>Contact Me</span>
                 </Button>
             </div>

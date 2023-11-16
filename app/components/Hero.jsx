@@ -10,8 +10,8 @@ import heroImg from '../assets/heroImg.png'
 
 export default function Hero() {
     return (
-        <div className='h-screen flex items-end bg-[rgb(245,248,249)]'>
-            <div className='flex w-full max-w-[83.333333%] mx-auto justify-between'>
+        <div className='h-screen flex items-end bg-[#f5f8f9]'>
+            <div className='flex  flex-col-reverse md:flex-row w-full max-w-[83.333333%] mx-auto justify-between'>
                 {/* left  */}
                 <div className='flex flex-col justify-center space-y-4'>
                     {/* subtitle */}
@@ -38,8 +38,8 @@ export default function Hero() {
                         </div>
                         {/* buttons  */}
                         <div className='flex items-center space-x-4'>
-                            <Button>Discover</Button>
-                            <ButtonSecondary>Resume</ButtonSecondary>
+                            <Button className=" hidden md:flex" >Discover</Button>
+                            <ButtonSecondary className=" hidden md:flex" >Resume</ButtonSecondary>
                         </div>
                     </div>
                 </div>
