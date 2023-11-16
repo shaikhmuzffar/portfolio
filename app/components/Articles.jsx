@@ -62,7 +62,7 @@ export default function Articles() {
                     {
                         myArticles.map(({img,title,subTitle,time}) =>
 
-                            <div className='flex flex-col col-span-12 md:col-span-6 lg:col-span-4 space-y-3 '>
+                            <div key={title} className='flex flex-col col-span-12 md:col-span-6 lg:col-span-4 space-y-3 '>
                                 {/* img */}
                                 <div className='relative w-full h-[260px] rounded-2xl overflow-hidden '>
                                     <Image src={img} layout='fill' objectFit='cover' />

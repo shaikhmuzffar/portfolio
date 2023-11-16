@@ -9,7 +9,7 @@ import dribbble from '../assets/dribbble.png'
 import linkedin from '../assets/linkedin.png'
 import twitter from '../assets/twitter.png'
 
-export default function
+export default function Footer
     () {
     return (
         <section className='bg-[#F5F8F9] mt-[120px]'>
@@ -95,7 +95,7 @@ export default function
                                 <Link className='text-sm opacity-70 text-blackText hover:opacity-100 hover:text-myGreen transtion cursor-pointer duration-300 ease-out' href='/'>Blog</Link>
                             </li>
                             <li>
-                                <Link className='text-sm opacity-70 text-blackText hover:opacity-100 hover:text-myGreen transtion cursor-pointer duration-300 ease-out' href='/'>FAQ's</Link>
+                                <Link className='text-sm opacity-70 text-blackText hover:opacity-100 hover:text-myGreen transtion cursor-pointer duration-300 ease-out' href='/'>FAQs</Link>
                             </li>
                         </ul>
                     </div>

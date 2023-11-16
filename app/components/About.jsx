@@ -104,7 +104,7 @@ export default function About() {
                     <div className='mt-[45px] flex flex-col space-y-5'>
 
                         {
-                            myDetails.map(({title,info}) => <div className='flex flex-col space-y-5' >
+                            myDetails.map(({title,info}) => <div key={title} className='flex flex-col space-y-5' >
                                 {/* detailsRow */}
                                 <div className='flex space-x-5 justify-between  items-center pb-4 border-b border-dashed'>
                                     <span className='text-lg'>{title}</span>
@@ -122,7 +122,7 @@ export default function About() {
                                     {
                                         // singleInfo
                                         info.map(({ subInfo, subTitle }) =>
-                                            <div className='opacity-90 text-sm'>
+                                            <div key={subTitle} className='opacity-90 text-sm'>
                                                 {subTitle ?
                                                     <div className='flex space-x-3 ' >
                                                         <span className='font-semibold'>{subTitle}:</span>

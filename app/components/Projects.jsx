@@ -104,7 +104,7 @@ export default function Projects() {
                     {/* single project */}
                     {
                         myProjects.map(({ img, title, description, tech }) =>
-                            <div className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
+                            <div key={title} className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
                                 <Image src={img} layout='fill' objectFit='cover' />
                                 {/* overlay */}
                                 <div className='absolute h-full w-full bg-black opacity-20 top-0 left-0' ></div>
@@ -119,7 +119,7 @@ export default function Projects() {
                                             <div className='flex items-center space-x-2'>
                                                 {/* tool */}
                                                 {tech.map(({img,name}) =>
-                                                    <div className='relative h-4 w-4 '>
+                                                    <div key={name} className='relative h-4 w-4 '>
                                                         <Image src={img} layout='fill' alt='tools' objectFit='contain' />
                                                     </div>
                                                 )
