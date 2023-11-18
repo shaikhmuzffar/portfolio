@@ -84,7 +84,7 @@ export default function Projects() {
                     {/* sectionHeading */}
                     <SectionHeading subTitle={'My Work'} title1={'My Recent'} title2={'Designs and Developments'} />
                     {/* arrows */}
-                    <div className='flex space-x-[15px]'>
+                    <div className='hidden lg:flex space-x-[15px]'>
                         {/* arrowLeft  */}
                         <div className='flex items-center justify-center h-[40px] w-[40px] rounded-full border-2 border-myGreen cursor-pointer' >
                             <div className='relative h-4 w-4 '>

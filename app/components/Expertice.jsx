@@ -11,7 +11,7 @@ export default function Expertice() {
                 <div className='col-span-12 md:col-span-7  lg:col-span-7 flex flex-col space-y-[30px]' >
                     <SectionHeading subTitle={'My Expetice'} title1={'I’m Experienced in'} title2={'Some Latest Trends'} />
                     <p className='w-full'>I design and develop modern web solutions with a professional design using latest trends.</p>
-                    <Button className=" hidden md:flex" >
+                    <Button className="flex" >
                         <span>Explore</span>
                     </Button>
                 </div>

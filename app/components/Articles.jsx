@@ -42,7 +42,7 @@ export default function Articles() {
                     {/* sectionHeading */}
                     <SectionHeading subTitle={'My Articles'} title1={'My articles on'} title2={'Latest Trends and Technology'} />
                     {/* arrows */}
-                    <div className='flex space-x-[15px]'>
+                    <div className=' hidden md:flex space-x-[15px]'>
                         {/* arrowLeft  */}
                         <div className='flex items-center justify-center h-[40px] w-[40px] rounded-full border-2 border-myGreen cursor-pointer' >
                             <div className='relative h-4 w-4 object-contain'>
