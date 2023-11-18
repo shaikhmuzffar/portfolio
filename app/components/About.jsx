@@ -91,14 +91,14 @@ export default function About() {
         <section className='mt-[120px]'>
             <div className='w-10/12 items-center mx-auto grid grid-cols-12 gap-5 md:gap-0'>
                 {/* img */}
-                <div className='col-span-12 md:col-span-5 lg:col-span-5 border  flex items-center justify-center'>
+                <div className='col-span-12 md:col-span-5 lg:col-span-5   flex items-center justify-center'>
                     <div className=' relative w-full h-[300px]  sm:h-[400px] '>
                         <Image src={aboutImg} layout='fill' objectFit='contain'alt='aboutImg' />
                     </div>
                 </div>
 
                 {/* right */}
-                <div className='col-span-12  md:col-span-7 lg:col-span-7 border text-blackText '>
+                <div className='col-span-12  md:col-span-7 lg:col-span-7  text-blackText '>
                     <SectionHeading subTitle="About Me" title1="Details About" title2="My Education and Experiences" />
                     {/* detailsRows */}
                     <div className='mt-[45px] flex flex-col space-y-5'>
