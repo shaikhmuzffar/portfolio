@@ -23,7 +23,7 @@ export default function SectionHeading({ subTitle, title1, title2, centerTitle})
                     title1 && <h1 className='text-[28px] text-blackText capitalize leading-[32px] font-medium'>{title1}</h1>
                 }
                 {
-                    title2 && <h1 className='text-[32px] text-blackText capitalize leading-[32px] font-semibold'>{title2}</h1>
+                    title2 && <h1 className='text-[32px] text-blackText capitalize leading-[40px] font-semibold'>{title2}</h1>
                 }
             </div>
         </div>
