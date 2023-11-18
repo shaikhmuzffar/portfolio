@@ -1,12 +1,15 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import Link from 'next/link'
 import Button from '../components/Button'
 import hamburger from '../assets/hamburger.png'
+import cross from '../assets/cross.png'
 
 
 export default function Navbar() {
+    const [showNav,setShowNav] = useState(false)
     return (
         <div className=' md:fixed md:top-0 md:w-full flex items-center h-[90px] z-10 bg-white shadow-lg'>
             <div className='w-full max-w-[83.333333%] mx-auto  flex justify-between items-center'>
@@ -15,20 +18,23 @@ export default function Navbar() {
                     <Image src={logo} layout='fill' alt='logo' objectFit='contain' />
                 </div>
                 {/* navigation */}
-                <ul className=' hidden md:flex space-x-12 text-sm'>
-                    <li className='text-myGreen'>
+                <ul className={`${showNav ? 'fixed' : 'hidden'} bg-white space-y-2 shadow-md w-screen p-4  pt-[15vh] text-center top-0 right-1  z-10  text-sm md:space-y-0  md:static md:bg-none md:shadow-none md:w-fit md:p-0 md:left-0 md:right-0 md:flex md:flex-row md:gap-x-4`} >
+                    <li className='absolute top-9 right-10 h-4 w-4 md:hidden ' >
+                    <Image src={cross} layout='fill' onClick={()=>setShowNav(false)} objectFit='contain' alt='cross'/>
+                    </li>
+                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-white'>
                         <Link href='/'>Home</Link>
                     </li>
-                    <li className='opacity-70  transition duration-300 ease-out hover:opacity-100 hover:text-myGreen'>
+                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none'>
                         <Link href='/'>About Me</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen' >
+                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
                         <Link href='/'>Services</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen' >
+                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
                         <Link href='/projects'>Projects</Link>
                     </li>
-                    <li className='opacity-70 hover:opacity-100 transition duration-300 ease-out hover:text-myGreen ' >
+                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
                         <Link href='/'>Blogs</Link>
                     </li>
                 </ul>
@@ -37,7 +43,7 @@ export default function Navbar() {
                     <span>Contact</span>
                 </Button>
                 <div className='relative h-6 w-6 md:hidden ' >
-                    <Image src={hamburger} layout='fill' objectFit='contain' alt='hamburger'  ></Image>
+                <Image src={hamburger} layout='fill' onClick={()=>setShowNav(true)} objectFit='contain' alt='hamburger'/>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@ export default function Hero() {
                             <p className='text-blackText text-[10px] text  lg:text-base leading-6  w-11/12 mx-auto md:ml-0 sm:w-[350px] ' >I dont really like talking about myself, but of my projects, which you can see here by clicking on them below</p>
                         </div>
                         {/* buttons  */}
-                        <div className='flex space-x-4 scale-75 justify-center md:justify-start md:scale-100  '>
+                        <div className='flex flex-col  justify-center gap-5 items-center sm:flex-row sm:justify-start  '>
                             <Button className="flex" >Discover</Button>
                             <ButtonSecondary className=" flex" >Resume</ButtonSecondary>
                         </div>
