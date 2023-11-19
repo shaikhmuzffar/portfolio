@@ -10,7 +10,7 @@ import heroImg from '../assets/heroImg.png'
 
 export default function Hero() {
     return (
-        <div className='pt-[60px] md:pt-[120px] flex items-end bg-[#f5f8f9]'>
+        <div className='pt-[60px] md:pt-[140px] lg:pt-[165px]  flex items-end bg-[#f5f8f9]'>
             <div className='grid grid-cols-12 gap-y-10 w-full max-w-[83.333333%] mx-auto '>
                 {/* left  */}
                 <div className='flex items-center  justify-center text-center md:items-start  md:text-start  col-span-12 md:col-span-6  flex-col  space-y-4'>
