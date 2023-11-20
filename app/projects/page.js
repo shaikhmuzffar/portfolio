@@ -20,19 +20,18 @@ export default function Page() {
         <ProjectImgs />
         <ProjectTags />
       </section>
-
       {/* projectInfo and Links */}
       <main className='mt-[60px] max-w-[83.333333%]  w-full  mx-auto' >
-        <section className='grid grid-cols-12 gap-5 ' >
+        <section className='grid grid-cols-12 gap-y-16 lg:gap-5 ' >
           {/* left */}
-          <div className='col-span-8 ' >
+          <div className='col-span-12 lg:col-span-8 ' >
             <LivePreview/>
             <ProjectInfo/>
             <ProjectDescription/>
             <ProjectTechStack/>
           </div>
           {/* right */}
-          <div className='col-span-4' >
+          <div className='col-span-12 lg:col-span-4' >
             <ProjectLinks/>
           </div>
         </section>

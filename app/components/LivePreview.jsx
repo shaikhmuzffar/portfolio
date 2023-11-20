@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LivePreview() {
     return (
-        <div className='flex justify-between border bg-white	rounded-2xl p-5'>
+        <div className='flex flex-col items-center gap-y-5 md:flex-row justify-between border bg-white	rounded-2xl p-5'>
             <h1 className='text-blackText  basis-[55%] ' >watch <span className='font-semibold' >Deployed Version/live preview</span> of
                 project on Vercel</h1>
             {/* button */}

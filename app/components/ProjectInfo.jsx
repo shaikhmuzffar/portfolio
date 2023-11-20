@@ -7,13 +7,13 @@ import projectType from '../assets/projectType.png'
 
 export default function ProjectInfo() {
     return (
-        <section className='flex gap-8 mt-[45px]' >
+        <section className='flex flex-col lg:flex-row gap-8 mt-[45px]' >
             {/* singleInfo */}
             <div className='flex gap-4 items-center' >
                 {/* icon */}
                 <div className='flex justify-center items-center h-12 w-12 rounded-full border ' >
                 <div className='relative  h-6 w-6  '>
-                    <Image src={projectCategory} layout='fill' objectFit='cover' objectPosition='center' />
+                    <Image src={projectCategory} layout='fill' objectFit='cover' alt='projectInfoIcon'  objectPosition='center' />
                 </div>
                 </div>
                 {/* info  */}
@@ -27,7 +27,7 @@ export default function ProjectInfo() {
                 {/* icon */}
                 <div className='flex justify-center items-center h-12 w-12 rounded-full border ' >
                 <div className='relative  h-6 w-6  '>
-                    <Image src={projectType} layout='fill' objectFit='cover' objectPosition='center' />
+                    <Image src={projectType} layout='fill' objectFit='cover' alt='projectInfoIcon' objectPosition='center' />
                 </div>
                 </div>
                 {/* info  */}
