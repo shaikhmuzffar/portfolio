@@ -12,10 +12,10 @@ import SecondarySectionHeading from './SecondarySectionHeading'
 
 export default function ProjectTechStack () {
     return (
-        <section className='hidden md:block mt-[45px]'>
+        <section className='block mt-[45px]'>
             <SecondarySectionHeading title={'Tech Stack'} />
             {/* techStacks */}
-            <div className='mt-[30px] flex space-x-5'>
+            <div className='mt-[30px] flex flex-row flex-wrap gap-5'>
                 {/* single tech stack */}
                 <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
                     <div className='relative  h-[25px] w-[25px]  '>
@@ -33,7 +33,7 @@ export default function ProjectTechStack () {
                 </div>
 
                 {/* single tech stack */}
-                <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
+                <div className='flex space-x-2 items-center  bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
                     <div className='relative  h-[25px] w-[25px]  '>
                         <Image className='smallIcon' src={figmaSmall} layout='fill' alt='figmaSmallIcon' objectFit='contain' objectPosition='center' />
                     </div>
