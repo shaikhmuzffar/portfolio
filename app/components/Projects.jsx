@@ -50,7 +50,7 @@ export default function Projects() {
                                     pathname: `/projects/${thumbURL}`,
                                     query: {project:thumbURL,
                                         data: JSON.stringify(project) },
-                                  }}
+                                  }} key={thumTitle}
                              className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
                                 <Image src={thumbImg} layout='fill' objectFit='cover' alt='projectImg' />
                                 {/* overlay */}
