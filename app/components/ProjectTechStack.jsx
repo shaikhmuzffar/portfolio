@@ -1,5 +1,7 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
+
 
 // images
 import reactSmall from '../assets/reactSmall.png'
@@ -10,45 +12,34 @@ import tailwindSmall from '../assets/tailwindSmall.png'
 // components
 import SecondarySectionHeading from './SecondarySectionHeading'
 
-export default function ProjectTechStack () {
+export default function ProjectTechStack({ sectionData }) {
+    const [techQuantity,setTechQuantity] =useState(3);
     return (
         <section className='block mt-[45px]'>
             <SecondarySectionHeading title={'Tech Stack'} />
             {/* techStacks */}
             <div className='mt-[30px] flex flex-row flex-wrap gap-5'>
                 {/* single tech stack */}
-                <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
-                    <div className='relative  h-[25px] w-[25px]  '>
-                        <Image className='smallIcon' src={reactSmall} alt='reactSmallIcon' layout='fill' objectFit='contain' objectPosition='center' />
+                {sectionData.slice(0, techQuantity).map(({icon,name}) =>
+                    <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
+                        <div className='relative  h-[25px] w-[25px]  '>
+                            <Image className='smallIcon' src={icon} alt='reactSmallIcon' layout='fill' objectFit='contain' objectPosition='center' />
+                        </div>
+                        <span className=''>{name}</span>
                     </div>
-                    <span className=''>React</span>
-                </div>
+                )
 
-                {/* single tech stack */}
-                <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
-                    <div className='relative  h-[25px] w-[25px]  '>
-                        <Image className='smallIcon' src={reduxSmall} layout='fill' alt='reduxSmallIcon' objectFit='contain' objectPosition='center' />
-                    </div>
-                    <span className=''>redux-toolkit</span>
-                </div>
+                }
 
-                {/* single tech stack */}
-                <div className='flex space-x-2 items-center  bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
-                    <div className='relative  h-[25px] w-[25px]  '>
-                        <Image className='smallIcon' src={figmaSmall} layout='fill' alt='figmaSmallIcon' objectFit='contain' objectPosition='center' />
-                    </div>
-                    <span className=''>redux-toolkit</span>
-                </div>
 
-                {/* single tech stack */}
-                <div className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
-                    <div className='relative  h-[25px] w-[25px]  '>
-                        <Image className='smallIcon' src={tailwindSmall} layout='fill' alt='tailwindSmallIcon' objectFit='contain' objectPosition='center' />
-                    </div>
-                    <span className=''>redux-toolkit</span>
-                </div>
             </div>
-            <h1 className='font-semibold text-sm mt-5 cursor-pointer  text-myGreen'>Show More</h1>
+            <h1 className='font-semibold text-sm mt-5 cursor-pointer  text-myGreen' onClick={()=>{
+                if(techQuantity<=3){
+                    setTechQuantity(sectionData.length)
+                }else{
+                    setTechQuantity(3) 
+                }
+                }} >{techQuantity<=3?'Show more':'Show less'}</h1>
         </section>
     )
 }

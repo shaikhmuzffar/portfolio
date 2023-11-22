@@ -3,11 +3,11 @@ import Image from 'next/image'
 import share from '../assets/share.png'
 import save from '../assets/save.png'
 
-export default function ProjectName() {
+export default function ProjectName({sectionData}) {
     return (
-        <section className=' w-full flex flex-col gap-y-5 justify-between ' >
+        <section className=' w-full flex flex-col  lg:flex-row gap-y-5 justify-between ' >
             {/* proectName */}
-            <h1 className='text-[28px] lg:text-[32px] text-blackText capitalize leading-[40px] font-semibold' >Doruko - a Food Ordering Website </h1>
+            <h1 className='text-[28px] lg:text-[32px] text-blackText capitalize leading-[40px] font-semibold' >{sectionData} </h1>
             {/* useractions save and share */}
             <div className='flex gap-x-3' >
                 {/* save  */}

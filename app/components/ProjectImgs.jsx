@@ -8,13 +8,13 @@ import screenShot3 from '../assets/doruko3.png'
 import screenShot4 from '../assets/doruko4.png'
 import arrowLeft from '../assets/arrowLeftRounded.png'
 
-export default function ProjectImgs() {
+export default function ProjectImgs({sectionData}) {
   return (
     <section className='grid grid-cols-12 opacity-90 gap-3 mt-[45px]  lg:h-[400px] lg:overflow-hidden lg:rounded-3xl' >
       {/* left  */}
       <div className='col-span-12 lg:col-span-6'>
         <div className='relative h-[200px] w-full lg:h-full  '>
-          <Image className='rounded-xl sm:rounded-none' src={screenShot4} alt='screenShot4' layout='fill' objectFit='cover' objectPosition='center' />
+          <Image className='rounded-xl sm:rounded-none' src={sectionData[0]} alt='screenShot4' layout='fill' objectFit='cover' objectPosition='center' />
         </div>
       </div>
       {/* right */}
@@ -22,7 +22,7 @@ export default function ProjectImgs() {
         {/* upperdiv */}
         <div>
           <div className='relative h-[200px] w-full'>
-            <Image className='rounded-xl sm:rounded-none' src={screenShot3} alt='screenShot3' layout='fill' objectFit='cover' />
+            <Image className='rounded-xl sm:rounded-none' src={sectionData[1]} alt='screenShot3' layout='fill' objectFit='cover' />
           </div>
         </div>
         {/* lowerdiv */}
@@ -30,13 +30,13 @@ export default function ProjectImgs() {
           {/* lowerdivImg left */}
           <div className='col-span-2 sm:col-span-1' >
             <div className='relative  h-[200px] w-full'>
-              <Image className='rounded-xl sm:rounded-none' src={screenShot2} alt='screenShot2' layout='fill' objectFit='cover' />
+              <Image className='rounded-xl sm:rounded-none' src={sectionData[2]} alt='screenShot2' layout='fill' objectFit='cover' />
             </div>
           </div>
           {/* lowerdivImg right | more images */}
           <div className='relative col-span-2  sm:col-span-1' >
             <div className='relative  h-[200px] w-full '>
-              <Image className='rounded-xl sm:rounded-none' src={screenShot1} alt='screenShot1' layout='fill' objectFit='cover' />
+              <Image className='rounded-md sm:rounded-none' src={sectionData[3]} alt='screenShot1' layout='fill' objectFit='cover' />
             </div>
             {/* overlay */}
             <div className='rounded-xl sm:rounded-none absolute top-0 opacity-50 left-0 w-full h-full bg-blackText' />

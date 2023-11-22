@@ -5,7 +5,7 @@ import Image from 'next/image'
 import projectCategory from '../assets/projectCategory.png'
 import projectType from '../assets/projectType.png'
 
-export default function ProjectInfo() {
+export default function ProjectInfo({sectionData}) {
     return (
         <section className='flex flex-col lg:flex-row gap-8 mt-[45px]' >
             {/* singleInfo */}
@@ -18,8 +18,8 @@ export default function ProjectInfo() {
                 </div>
                 {/* info  */}
                 <div className='text-blackText'>
-                    <h1 className='font-bold '>Frontend Project</h1>
-                    <p className='text-xs' >client side</p>
+                    <h1 className='font-bold '>{sectionData[0].title}</h1>
+                    <p className='text-xs' >{sectionData[0].subTitle}</p>
                 </div>
             </div>
             {/* singleInfo */}
@@ -32,8 +32,8 @@ export default function ProjectInfo() {
                 </div>
                 {/* info  */}
                 <div className='text-blackText'>
-                    <h1 className='font-bold '>Food Delivery</h1>
-                    <p className='text-xs' >ecommerce</p>
+                <h1 className='font-bold '>{sectionData[1].title}</h1>
+                    <p className='text-xs' >{sectionData[1].subTitle}</p>
                 </div>
             </div>
         </section>
