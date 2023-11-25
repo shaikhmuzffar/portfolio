@@ -38,6 +38,14 @@ import behanceSmallBlack from '../assets/behanceSmallBlack.png'
 import dribbleSmallColor from '../assets/dribbleSmallColor.png'
 import dribbbleSmallBlack from '../assets/dribbleSmallBlack.png'
 
+// serviceIconImages
+import tailwindServiceIcon from  '../assets/tailwindServicesIcon.png'
+import responsiveServiceIcon from  '../assets/responsiveServicesIcon.png'
+import ssrServicesIcon from  '../assets/ssrServicesIcon.png'
+import reduxServicesIcon from  '../assets/reduxServicesIcon.png'
+import routingServicesIcon from  '../assets/routingServicesIcon.png'
+import penServicesIcon from  '../assets/penServicesIcon.png'
+
 // doruko images  
 import dorukoProThumb from '../assets/dorukoProThumb.png'
 import dorukoS1 from '../assets/doruko1.png'
@@ -53,11 +61,6 @@ import portfolioS3 from '../assets/portfolio3.png'
 
 //  touro images  
 import grocifyProThumb from '../assets/grocifyThumb.png'
-
-
-
-
-
 
 const myProjects = [
   // doruko
@@ -156,22 +159,59 @@ const myProjects = [
       }
     ],
     keyFeatures: [
-      "User-Friendly Interface",
-      "Cart-to-Order Process",
-      "Central Storage with Redux",
-      "Design with Figma",
-      "React Hooks and Router",
-      "Icon Integration"
+      {
+        img:penServicesIcon,
+        title:"User-Friendly Interface",
+      },
+      {
+        img:responsiveServiceIcon,
+        title:"Cart-to-Order Process",
+      },
+      {
+        img:reduxServicesIcon,
+        title:"Central Storage with Redux",
+      },
+      {
+        img:penServicesIcon,
+        title:"Design with Figma",
+      },
+      {
+        img:routingServicesIcon,
+        title:"React Hooks and Router",
+      },
+      {
+        img:ssrServicesIcon,
+        title: "Icon Integration"
+      },
     ],
     achievements: [
-      "Successfully launched a fully functional food delivery website.",
-      "Demonstrated expertise in utilizing cutting-edge technologies.",
-      "Received recognition for the thoughtful integration of diverse food categories."
+      {
+        title:"first fully-functional Website",
+        subTitle:"Successfully launched a fully functional food delivery website."
+      },
+      {
+        title:"hands on experience of Trendy Skills",
+        subTitle:"Demonstrated expertise in utilizing cutting-edge technologies."
+      },
+      {
+        title:" research Improved ",
+        subTitle:"Received recognition for the thoughtful integration of diverse food categories."
+      },
     ],
     futureImprovements: [
-      "complete add to cart process depiction with redux and context Api",
-      "intigrate with backend technologies like mongoodb",
-      "capturing more diverse food categories"
+      {
+        title:"Entire Add-to-Cart Process",
+        subTitle:"complete add to cart process depiction with redux and context Api",
+      },
+      {
+        title:"database Integration",
+        subTitle:"intigrate with backend technologies like mongoodb",
+      },
+      {
+        title:"covering diverse range",
+        subTitle:"capturing more diverse food categories",
+      },
+      
     ],
     conclusion: "The React-Based Food Delivery Website project showcases my proficiency in front-end development, UI/UX design, and state management. It highlights my commitment to delivering high-quality, user-centric solutions in the ever-evolving landscape of web development."
   },
@@ -247,20 +287,46 @@ const myProjects = [
       }
     ],
     keyFeatures: [
-      "Intuitive Exploration",
-      "Itinerary Planning",
-      "Real-time Updates",
-      "Interactive UI with React Icons",
-      "Modern and Visually Appealing Layout"
+      {
+        img:penServicesIcon,
+        title:"Intuitive Exploration",
+      },
+      {
+        img:penServicesIcon,
+        title:"Itinerary Planning",
+      },
+      {
+        img:penServicesIcon,
+        title:"Real-time Updates",
+      },
+      {
+        img:penServicesIcon,
+        title:"Interactive UI with React Icons",
+      },
+      {
+        img:penServicesIcon,
+        title: "Modern and Visually Appealing Layout"
+      },
     ],
     achievements: [
-      "Successfully developed and launched Touro, a dynamic travel website.",
-      "Provided users with an intuitive platform for exploration and itinerary planning.",
-      "Received positive feedback for the modern and visually appealing design."
+      {
+        title:"firt fully-functional React Website",
+        subTitle:"Successfully developed and launched Touro, a Reactjs static travel website."
+      },
+      {
+        title:"simplfied and clean design",
+        subTitle:"Received positive feedback for the modern and visually appealing design.",
+      },
     ],
     futureImprovements: [
-      "Integration of personalized user accounts for enhanced planning and tracking.",
-      "Incorporation of real-time collaboration features for group travel planning."
+      {
+        title:"personalized interface",
+        subTitle:"Integration of personalized user accounts for enhanced planning and tracking.",
+      },
+      {
+        title:"real-time collaboration",
+        subTitle:"Incorporation of real-time collaboration features for group travel planning."
+      },
     ],
     conclusion: "Touro represents my dedication to creating immersive and user-centric web experiences. The combination of ReactJS, React Icons, Figma, and Vanilla CSS allowed me to deliver a feature-rich travel website with a modern design, ensuring a memorable and enjoyable experience for users."
   },
@@ -339,22 +405,59 @@ const myProjects = [
       }
     ],
     keyFeatures: [
-      "Simplified UI Designed with Figma",
-      "Efficient Routing with Next.js App Router",
-      "Fully Responsive Portfolio",
-      "Utilization of Tailwind CSS for Styling",
-      "Redux Store as Single Source of Truth",
-      "Server-Side Rendering with Next.js Components"
+      {
+        img:penServicesIcon,
+        title: "Simplified UI ",
+      },
+      {
+        img:routingServicesIcon,
+        title: "Efficient Routing ",
+      },
+      {
+        img:responsiveServiceIcon,
+        title: "Fully Responsive Design",
+      },
+      {
+        img:responsiveServiceIcon,
+        title: "Utility-first-CSS",
+      },
+      {
+        img:responsiveServiceIcon,
+        title: "Single Source of Truth",
+      },
+      {
+        img:responsiveServiceIcon,
+        title: "Server-Side Rendering",
+      },
     ],
     achievements: [
-      "Successfully developed and launched a portfolio website using Next.js 14.",
-      "Designed a simplified and visually appealing UI that enhances user experience.",
-      "Implemented efficient routing and fully responsive design for optimal accessibility.",
-      "Utilized Redux for streamlined state management across the entire website."
+      {
+        title:"First Next.js Website",
+        subTitle:"Successfully developed and launched a portfolio website using Next.js 14.",
+      },
+      {
+        title:"Simplified UI",
+        subTitle:"Designed a simplified and visually appealing UI that enhances user experience.",
+      },
+      {
+        title:"efficient navigation and responsiveness ",
+        subTitle:"Implemented efficient routing and fully responsive design for optimal accessibility.",
+      },
+      {
+        title:"implmentation of Redux",
+        subTitle:"Utilized Redux for streamlined state management across the entire website.",
+      },
     ],
     futureImprovements: [
-      "Integration of additional interactive elements for enhanced user engagement.",
-      "Exploration of further optimizations leveraging the latest features of Next.js."
+      {
+        title:"enhanced interaction",
+        subTitle:"Integration of additional interactive elements for enhanced user engagement."
+      },
+      {
+        title:"Opmtimization with Latest Version",
+        subTitle:"Exploration of further optimizations leveraging the latest features of Next.js."
+      },
+      
     ],
     conclusion: "The development of this portfolio website showcases my commitment to creating modern, responsive, and user-centric web experiences. Leveraging Next.js, Figma, Tailwind CSS, and Redux allowed me to build a feature-rich and visually pleasing portfolio that reflects my skills and achievements in web development."
   }

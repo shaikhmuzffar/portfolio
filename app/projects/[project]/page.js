@@ -11,12 +11,16 @@ import ProjectInfo from '../../components/ProjectInfo'
 import ProjectDescription from '../../components/ProjectDescription'
 import ProjectTechStack from '../../components/ProjectTechStack'
 import ProjectLinks from '../../components/ProjectLinks'
+import Achivements from '@/app/components/Achivements'
+import KeyFeature from '@/app/components/KeyFeature'
+import FutureImprovements from '@/app/components/FutureImprovements'
+import Conclusion from '@/app/components/Conclusion'
 
 export default function Page() {
   const searchParams = useSearchParams()
   const data =searchParams.get('data')
   const projectData=JSON.parse(data)
-  console.log(projectData);
+  // console.log(projectData);
 
   return (
     <div className='pt-[60px] md:pt-[140px] lg:pt-[165px]'>
@@ -28,7 +32,7 @@ export default function Page() {
       </section>
       {/* projectInfo and Links */}
       <main className='mt-[60px] max-w-[83.333333%]  w-full  mx-auto' >
-        <section className='grid grid-cols-12 gap-y-16 lg:gap-5 ' >
+        <section className=' grid grid-cols-12 gap-y-16 lg:gap-5 ' >
           {/* left */}
           <div className='col-span-12 lg:col-span-8 ' >
             <LivePreview />
@@ -37,12 +41,17 @@ export default function Page() {
             <ProjectTechStack sectionData={projectData.projTech} />
           </div>
           {/* right */}
-          <div className='col-span-12 lg:col-span-4' >
+          <div className=' col-span-12 lg:col-span-4' >
             <ProjectLinks />
           </div>
         </section>
-
+        <Achivements sectionData={projectData.achievements} />
+        <KeyFeature  sectionData={projectData.keyFeatures} />
+        <FutureImprovements sectionData={projectData.futureImprovements} />
+        <Conclusion sectionData={projectData.conclusion} />
       </main>
+
+  
 
     </div >
   )
