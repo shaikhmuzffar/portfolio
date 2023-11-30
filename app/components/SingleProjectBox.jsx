@@ -70,8 +70,8 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                     <div className='mt-2' >
                         {/* single tech stack */}
                         <div className='flex gap-2' >
-                            {thumbTech.map(({ img }) =>
-                                <div className='relative w-5 h-5  '>
+                            {thumbTech.map(({ img,title }) =>
+                                <div key={title} className='relative w-5 h-5  '>
                                     <Image src={img} alt='reactSmallColor' layout='fill' objectFit='contain' objectPosition='center' />
                                 </div>)
                             }
@@ -79,7 +79,7 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                         </div>
 
                     </div>
-                </div>
+                </div>k
                 <button className='bg-myGreen w-full mt-8  bg-opacity-10 hover:bg-opacity-10 text-myGreen font-semibold rounded-md px-[50px] py-[15px]' onClick={() => navigate.push(`projects/${thumbURL}`)} >
                     Explore
                 </button>

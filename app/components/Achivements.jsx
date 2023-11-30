@@ -16,7 +16,7 @@ export default function Achivements({sectionData}) {
                 {/* single achivement */}
                 {
                     sectionData && sectionData.map(({title,subTitle}) =>
-                        <div className='flex space-x-2 pl-3 pb-[30px]'>
+                        <div key={title} className='flex space-x-2 pl-3 pb-[30px]'>
                             <div className='flex  h-[50] w-[50px] justify-center items-center'>
                                 <div className='relative h-5 w-5'>
                                     <Image className='rounded-xl sm:rounded-none' src={hashImg} alt='screenShot3' layout='fill' objectFit='contain' />

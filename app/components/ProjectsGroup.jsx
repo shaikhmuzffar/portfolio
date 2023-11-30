@@ -20,7 +20,7 @@ export default function ProjectsGroup() {
         {/* single project */}
         {
           myProjects.map(({thumTitle,thumbDescription,thumbTech,projInfo,projScreenshots,thumbURL}) =>
-          <SingleProjectBox thumTitle={thumTitle} thumbDescription={thumbDescription} thumbTech={thumbTech} projInfo={projInfo} projScreenshots={projScreenshots} thumbURL={thumbURL} />
+          <SingleProjectBox key={thumTitle} thumTitle={thumTitle} thumbDescription={thumbDescription} thumbTech={thumbTech} projInfo={projInfo} projScreenshots={projScreenshots} thumbURL={thumbURL} />
           )
         }
 
