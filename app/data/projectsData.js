@@ -81,7 +81,7 @@ const myProjects = [
     ],
     projInfo: [
       {
-        title: "Frontend",
+        title: "Frontend - client side",
         subTitle: "client side"
       },
       {
@@ -248,7 +248,7 @@ const myProjects = [
     ],
     projInfo: [
       {
-        title: "Frontend",
+        title: "Frontend - client side",
         subTitle: "client side"
       },
       {
@@ -364,7 +364,7 @@ const myProjects = [
     ],
     projInfo: [
       {
-        title: "Frontend",
+        title: "Frontend - client side",
         subTitle: "client side"
       },
       {

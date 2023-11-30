@@ -46,11 +46,7 @@ export default function Projects() {
                             const { thumbImg, thumTitle, thumbDescription, thumbTech, thumbURL } = project;
 
                             return (<Link 
-                                href={{
-                                    pathname: `/projects/${thumbURL}`,
-                                    query: {project:thumbURL,
-                                        data: JSON.stringify(project) },
-                                  }} key={thumTitle}
+                                href={`/projects/${thumbURL}`} key={thumTitle}
                              className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
                                 <Image src={thumbImg} layout='fill' objectFit='cover' alt='projectImg' />
                                 {/* overlay */}

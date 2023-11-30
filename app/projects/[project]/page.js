@@ -1,6 +1,5 @@
 'use client'
-import React from 'react'
-import { useSearchParams } from 'next/navigation'
+import React, { useState } from 'react'
 
 // components
 import ProjectName from '../../components/ProjectName'
@@ -16,11 +15,14 @@ import KeyFeature from '@/app/components/KeyFeature'
 import FutureImprovements from '@/app/components/FutureImprovements'
 import Conclusion from '@/app/components/Conclusion'
 
-export default function Page() {
-  const searchParams = useSearchParams()
-  const data =searchParams.get('data')
-  const projectData=JSON.parse(data)
-  // console.log(projectData);
+// projectData
+import myProjects from '../../data/projectsData'
+
+export default function Page({params}) {
+  const [projId,setProjectId] = useState(params.project)
+  const projectData = myProjects.find(({thumbURL})=>thumbURL===projId)
+  console.log(myProjects);
+
 
   return (
     <div className='pt-[60px] md:pt-[140px] lg:pt-[165px]'>
@@ -50,9 +52,6 @@ export default function Page() {
         <FutureImprovements sectionData={projectData.futureImprovements} />
         <Conclusion sectionData={projectData.conclusion} />
       </main>
-
-  
-
     </div >
   )
 }
