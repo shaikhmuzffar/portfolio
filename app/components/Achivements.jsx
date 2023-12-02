@@ -4,8 +4,7 @@ import SectionHeading from './SectionHeading'
 import SecondarySectionHeading from './SecondarySectionHeading'
 import Image from 'next/image'
 
-// svg
-import ReactIcon from './svgs/ReactIcon'
+
 
 // imgs
 import hashImg from '../assets/hash.png'
@@ -30,7 +29,6 @@ export default function Achivements({sectionData}) {
                             <div >
                                 <h1 className='font-semibold text-base' >{title}</h1>
                                 <p className='text-xs opacity-80' >{subTitle}</p>
-                                <ReactIcon/>
                             </div>
                             
                         </div>

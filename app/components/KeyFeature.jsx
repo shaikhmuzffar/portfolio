@@ -15,7 +15,7 @@ export default function KeyFeature({ sectionData }) {
                     {/* single keyfeatures  */}
                     {
                         sectionData.slice(0, featuresQuantity).map((feature) =>
-                            <li key={feature.title} className='py-3 '>
+                            <li key={feature.title} className='py-3 col-span-2 sm:col-span-1 '>
                                 {/* info  */}
                                 <h1 className='font-medium' >{feature.title}</h1>
                             </li>
