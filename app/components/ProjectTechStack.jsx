@@ -21,11 +21,11 @@ export default function ProjectTechStack({ sectionData }) {
             <div className='mt-[30px] flex flex-row flex-wrap gap-5'>
                 {/* single tech stack */}
                 {sectionData.slice(0, techQuantity).map(({icon,name}) =>
-                    <div key={name} className='flex space-x-2 items-center bg-gray-100 p-4 w-[187px] cursor-pointer rounded-lg '>
+                    <div key={name} className='flex space-x-2 items-center bg-gray-100 hover:bg-myGreen text-blackText hover:text-white p-4 w-[187px] cursor-pointer rounded-lg '>
                         <div className='relative  h-[25px] w-[25px]  '>
                             <Image className='smallIcon' src={icon} alt='reactSmallIcon' layout='fill' objectFit='contain' objectPosition='center' />
                         </div>
-                        <span className=''>{name}</span>
+                        <span className='select-none'>{name}</span>
                     </div>
                 )
 
