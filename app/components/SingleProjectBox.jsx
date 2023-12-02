@@ -11,7 +11,7 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
             {/* top div  */}
             <div className='grid grid-cols-12 gap-7 pb-5 md:pb-8 border-b'>
                 {/* Img  */}
-                <div className='col-span-12 md:col-span-6 lg:col-span-5 h-[250px] w-full' >
+                <div className='col-span-12 md:col-span-6 lg:col-span-5 h-[250px] sm:h-[350px] w-full' >
                     <div className='relative w-full h-full md:none '>
                         <Image className='rounded-xl' src={projScreenshots[0]} alt='screenShot4' layout='fill' objectFit='cover' objectPosition='center' />
                         <div className='absolute h-full w-full bg-black opacity-5 rounded-xl' />
@@ -20,18 +20,20 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                 {/* projectInfo */}
                 <div className='col-span-12 md:col-span-6 lg:col-span-7 '>
                     {/* name and date */}
-                    <div className='pb-3 md:pt-5 md:pb-7 border-b' >
-                        <h1 className='text-xl md:text-3xl font-semibold' >{thumTitle}</h1>
-                        <p className='text-sm md:text-lg mt-2 font-medium opacity-80 ' >{thumbDescription}</p>
+                    <div className='lg:pb-3 md:pt-5 md:pb-7 lg:border-b' >
+                        <h1 className='text-2xl sm:text-3xl font-semibold' >{thumTitle}</h1>
+                        <p className='text-base sm:text-lg mt-2 font-medium opacity-90 ' >{thumbDescription}</p>
                     </div>
 
+                    <p className=' text-sm sm:text-base opacity-70 mt-2' >sep 2023 - oct 2023</p>
+
                     {/* info */}
-                    <div className='flex flex-col mt-30px md:flex-row md:gap-[60px] ' >
+                    <div className='hidden lg:flex flex-col mt-30px md:flex-row md:gap-[60px] ' >
                         {/* single info */}
                         <div className='flex space-x-5 mt-5 items-center' >
                             {/* img */}
                             <div className='w-[50px] h-[50px] md:w-[60px] md:h-[60px] flex items-center justify-center' >
-                                <div className='relative w-7 h-7 md:w-10 md:h-10 opacity-80  '>
+                                < div className='relative w-7 h-7 md:w-10 md:h-10 opacity-80  '>
                                     <Image className='rounded-xl ' src={projectCategory} alt='screenShot4' layout='fill' objectFit='contain' objectPosition='center' />
                                 </div>
                             </div>
@@ -62,10 +64,10 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                 </div>
             </div>
             {/* bottom div */}
-            <div className='flex flex-col md:flex-row items-center justify-between mt-8'>
+            <div className='flex flex-col md:flex-row items-center justify-between mt-4 lg:mt-8'>
                 {/* tech stack */}
                 <div className='flex w-full flex-row md:flex-col items-center justify-between ' >
-                    <p className='font-medium' >Tech Stack</p>
+                    <p className=' opacity-70 text-lg' >Tech Stack</p>
                     {/* tech stack group  */}
                     <div className='mt-2' >
                         {/* single tech stack */}
@@ -75,11 +77,9 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                                     <Image src={img} alt='reactSmallColor' layout='fill' objectFit='contain' objectPosition='center' />
                                 </div>)
                             }
-
                         </div>
-
                     </div>
-                </div>k
+                </div>
                 <button className='bg-myGreen w-full mt-8  bg-opacity-10 hover:bg-opacity-10 text-myGreen font-semibold rounded-md px-[50px] py-[15px]' onClick={() => navigate.push(`projects/${thumbURL}`)} >
                     Explore
                 </button>
