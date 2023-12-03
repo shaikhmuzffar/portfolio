@@ -47,15 +47,15 @@ export default function Projects() {
 
                             return (<Link 
                                 href={`/projects/${thumbURL}`} key={thumTitle}
-                             className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
+                             className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[300px] md:h-[500px] mt-[45px] w-full rounded-2xl overflow-hidden'>
                                 <Image src={thumbImg} layout='fill' objectFit='cover' alt='projectImg' />
                                 {/* overlay */}
                                 <div className='absolute h-full w-full bg-black opacity-20 top-0 left-0' ></div>
                                 {/* proectInfo */}
-                                <div className='absolute px-[15px] flex-col space-y-1 py-[10px] rounded-xl bg-white text-blackText bottom-2 left-2'>
-                                    <h1 className='text-xl font-semibold' >{thumTitle}</h1>
+                                <div className='absolute px-[15px] w-[75%] flex-col space-y-1 py-[10px] rounded-xl bg-white text-blackText bottom-2 left-2'>
+                                    <h1 className='text-xl font-semibold' >{thumTitle.length>17?thumTitle.slice(0,17)+"...":thumTitle}</h1>
                                     <div className='flex flex-col space-y-1'>
-                                        <p className='text-sm '>{thumbDescription}</p>
+                                        <p className='text-sm '>{thumbDescription>60?thumbDescription.slice(0,60)+"...":thumbDescription}</p>
                                         <div className='flex space-x-3' >
                                             <span className='text-[12px] opacity-80'>Tools used</span>
                                             {/* tools */}
