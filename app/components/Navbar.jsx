@@ -18,23 +18,23 @@ export default function Navbar() {
                     <Image src={logo} layout='fill' alt='logo' objectFit='contain' />
                 </div>
                 {/* navigation */}
-                <ul className={`${showNav ? 'fixed' : 'hidden'} bg-white space-y-2 shadow-md w-screen p-4  pt-[15vh] text-center top-0 right-1  z-10  text-sm md:space-y-0  md:static md:bg-none md:shadow-none md:w-fit md:p-0 md:left-0 md:right-0 md:flex md:flex-row md:gap-x-4`} >
+                <ul className={`${showNav ? 'fixed' : 'hidden'} bg-white space-y-4 shadow-md w-screen p-4 pt-[15vh] pb-8 text-center top-0 right-1  z-10  text-sm md:space-y-0  md:static md:bg-none md:shadow-none md:w-fit md:p-0 md:left-0 md:right-0 md:flex md:flex-row md:gap-x-4 ` } >
                     <li className='absolute top-9 right-10 h-4 w-4 md:hidden ' >
                     <Image src={cross} layout='fill' onClick={()=>setShowNav(false)} objectFit='contain' alt='cross'/>
                     </li>
-                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-white'>
+                    <li className='text-myGreen  py-[15px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' onClick={()=>setShowNav(false)} >
                         <Link href='/'>Home</Link>
                     </li>
-                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none'>
+                    <li className='text-myGreen  py-[15px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10  md:text-[12px] md:py-0 md:hover:bg-none' onClick={()=>setShowNav(false)} >
                         <Link href='/'>About Me</Link>
                     </li>
-                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
+                    <li className='text-myGreen  py-[15px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' onClick={()=>setShowNav(false)} >
                         <Link href='/'>Services</Link>
                     </li>
-                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
+                    <li className='text-myGreen  py-[15px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' onClick={()=>setShowNav(false)} >
                         <Link href='/projects'>Projects</Link>
                     </li>
-                    <li className='text-myGreen  py-[8px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' >
+                    <li  className='text-myGreen  py-[15px] rounded-md px-2 hover:bg-myGreen hover:bg-opacity-10 md:text-[12px] md:py-0 md:hover:bg-none' onClick={()=>setShowNav(false)} >
                         <Link href='/'>Blogs</Link>
                     </li>
                 </ul>
