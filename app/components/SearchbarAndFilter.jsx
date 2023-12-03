@@ -3,9 +3,14 @@ import Image from 'next/image'
 
 // images
 import searchIcon from '../assets/searchIcon.png'
-import ReactIcon from './svgs/ReactIcon'
 
-export default function SearchbarAndFilter() {
+
+
+export default function SearchbarAndFilter({onSearchChange}) {
+  const searchChangeHandler = (e)=>{
+    const inputValue = e.target.value;
+    onSearchChange(inputValue)
+  } 
   return (
     <section>
       <div className='flex flex-col sm:flex-row justify-between gap-y-6  md:border md:border-gray-100 px-3 py-3 rounded-[10px]' >
@@ -14,7 +19,7 @@ export default function SearchbarAndFilter() {
           <div className='relative h-5 w-5 opacity-80 ' >
             <Image src={searchIcon} layout='fill' objectFit='contain' ></Image>
           </div>
-          <input type="text" className='outline-none  w-full border-gray-100 sm:w-56 md:w-72 lg:w-96'  placeholder='Search your preference...' />
+          <input type="text" onChange={searchChangeHandler} className='outline-none  w-full border-gray-100 sm:w-56 md:w-72 lg:w-96'  placeholder='Search your preference...' />
         </div>
 
         {/* filters */}

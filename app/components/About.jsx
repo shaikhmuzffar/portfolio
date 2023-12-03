@@ -7,88 +7,91 @@ import minus from '../assets/minus.png'
 import aboutImg from '../assets/AboutMeImg.png'
 import SectionHeading from './SectionHeading'
 
+// data 
+import aboutData from '../data/aboutData'
 
 
-const myDetails = [
-    {
-        title: "My Educational Details",
-        info: [
-            {
-                subTitle: "Name",
-                subInfo: "Muzffar Shaikh"
-            },
-            {
-                subTitle: "Email ID",
-                subInfo: "shaikhmuzffar82@gmail.com"
-            },
-            {
-                subTitle: "Phone",
-                subInfo: "8208091113"
-            },
-            {
-                subTitle: "Website",
-                subInfo: "myWebsite.com"
-            },
-            {
-                subTitle: "Nationality",
-                subInfo: "Indian"
-            },
-            {
-                subTitle: "Freelance",
-                subInfo: "Available"
-            },
-        ]
-    },
-    {
-        title: "Certifications and Achievements",
-        info: [
-            {
-                subTitle: "",
-                subInfo: "MERN Stack Web Development"
-            },
-            {
-                subTitle: "",
-                subInfo: "Responsive Design and Development"
-            },
-            {
-                subTitle: "",
-                subInfo: "UI/UX Design"
-            },
 
-        ]
-    },
-    {
-        title: "Skills",
-        info: [
-            {
-                subTitle: "Languages",
-                subInfo: "Javascript, HTML, C, CPP, Python"
-            },
-            {
-                subTitle: "React JS, GSAP",
-                subInfo: "Responsive Design and Development"
-            },
-            {
-                subTitle: "Framework",
-                subInfo: "Next JS, Redux-Toolkit, React-Router"
-            },
-            {
-                subTitle: "UI Framework",
-                subInfo: "Tailwind CSS, Bootstrap, Material UI"
-            },
-            {
-                subTitle: "CSS PreProcessors",
-                subInfo: "SASS/SCSS, CSS Modules "
-            },
+// const myDetails = [
+//     {
+//         title: "My Educational Details",
+//         info: [
+//             {
+//                 subTitle: "Name",
+//                 subInfo: "Muzffar Shaikh"
+//             },
+//             {
+//                 subTitle: "Email ID",
+//                 subInfo: "shaikhmuzffar82@gmail.com"
+//             },
+//             {
+//                 subTitle: "Phone",
+//                 subInfo: "8208091113"
+//             },
+//             {
+//                 subTitle: "Website",
+//                 subInfo: "myWebsite.com"
+//             },
+//             {
+//                 subTitle: "Nationality",
+//                 subInfo: "Indian"
+//             },
+//             {
+//                 subTitle: "Freelance",
+//                 subInfo: "Available"
+//             },
+//         ]
+//     },
+//     {
+//         title: "Certifications and Achievements",
+//         info: [
+//             {
+//                 subTitle: "",
+//                 subInfo: "MERN Stack Web Development"
+//             },
+//             {
+//                 subTitle: "",
+//                 subInfo: "Responsive Design and Development"
+//             },
+//             {
+//                 subTitle: "",
+//                 subInfo: "UI/UX Design"
+//             },
 
-        ]
-    },
-]
+//         ]
+//     },
+//     {
+//         title: "Skills",
+//         info: [
+//             {
+//                 subTitle: "Languages",
+//                 subInfo: "Javascript, HTML, C, CPP, Python"
+//             },
+//             {
+//                 subTitle: "Libraries",
+//                 subInfo: "React JS, GSAP"
+//             },
+//             {
+//                 subTitle: "Framework",
+//                 subInfo: "Next JS, Redux-Toolkit, React-Router"
+//             },
+//             {
+//                 subTitle: "UI Framework",
+//                 subInfo: "Tailwind CSS, Bootstrap, Material UI"
+//             },
+//             {
+//                 subTitle: "CSS PreProcessors",
+//                 subInfo: "SASS/SCSS, CSS Modules "
+//             },
+
+//         ]
+//     },
+// ]
 
 export default function About() {
     const [tab,setTab] =useState("")
     return (
-        <section className='mt-[120px]'>
+        <section className='mt-[120px] select-none '>
             <div className='w-10/12 items-center mx-auto grid grid-cols-12 gap-5 md:gap-0'>
                 {/* img */}
                 <div className='col-span-12 md:col-span-5 lg:col-span-5   flex items-center justify-center'>
@@ -103,7 +106,7 @@ export default function About() {
                     {/* detailsRows */}
                     <div className='mt-[45px] flex flex-col space-y-5'>
                         {
-                            myDetails.map(({title,info}) => <div key={title} className='flex flex-col space-y-5' >
+                            aboutData.map(({title,info}) => <div key={title} className='flex flex-col space-y-5' >
                                 {/* detailsRow */}
                                 <div className='flex space-x-5 justify-between  items-center pb-4 border-b border-dashed'>
                                     <span className='text-lg'>{title}</span>

@@ -7,7 +7,6 @@ import Button from '../components/Button'
 import hamburger from '../assets/hamburger.png'
 import cross from '../assets/cross.png'
 
-
 export default function Navbar() {
     const [showNav,setShowNav] = useState(false)
     return (

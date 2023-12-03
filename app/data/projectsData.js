@@ -72,6 +72,7 @@ const myProjects = [
     thumbURL: 'doruko',
     projTags: [
       "ReactJS",
+      "doruko",
       "Redux",
       "Figma",
       "CSS3",
@@ -81,7 +82,7 @@ const myProjects = [
     ],
     projInfo: [
       {
-        title: "Frontend - client side",
+        title: "Frontend",
         subTitle: "client side"
       },
       {
@@ -241,14 +242,15 @@ const myProjects = [
       },
     ],
     projTags: [
-      "travelWebsite",
+      "Touro",
+      "travel Website",
       "FrontEnd",
       "ReactJs",
       "CSS3",
     ],
     projInfo: [
       {
-        title: "Frontend - client side",
+        title: "Frontend",
         subTitle: "client side"
       },
       {
@@ -364,7 +366,7 @@ const myProjects = [
     ],
     projInfo: [
       {
-        title: "Frontend - client side",
+        title: "Frontend",
         subTitle: "client side"
       },
       {
