@@ -1,11 +1,14 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 import githubSmall from '../assets/githubSmall.png'
 import dribbbleSmall from '../assets/dribbbleSmall.png'
-import Button from './Button'
+import Button from './Button' 
 
-export default function ProjectLinks() {
+export default function ProjectLinks({projGit}) {
+    const router = useRouter();
     return (
         <section>
             {/* section title  */}
@@ -16,7 +19,7 @@ export default function ProjectLinks() {
             {/* links */}
             <div className='grid grid-cols-2 justify-between text-blackText px-10 sm:px-8 md:px-12 lg:p-0  xl:p-5 gap-5 sm:gap-5 xl:gap-4 lg:gap-2 my-8 md:my-10 ' >
                 {/* github */}
-                <div className='col-span-2  sm:col-span-1  border-myGreen  p-6 lg:p-3 h-[200px] justify-center  flex flex-col items-center rounded-xl bg-gray-50 cursor-pointer select-none  '>
+                <div onClick={()=>router.push(projGit)} className='col-span-2  sm:col-span-1  border-myGreen  p-6 lg:p-3 h-[200px] justify-center  flex flex-col items-center rounded-xl bg-gray-50 cursor-pointer select-none  '>
                     <p className='font-medium text-base lg:text-[12px] text-center text-blackText opacity-80 '>checkout the complete source code on</p>
                     {/* Githubicon */}
                     <div className='relative  mt-5 h-7 w-[120px] md:h-10 md:w-[140px] lg:w-[90px] lg:h-5'>

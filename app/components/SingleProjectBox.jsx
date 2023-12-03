@@ -14,7 +14,7 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
             {/* top div  */}
             <div className='grid grid-cols-12 gap-5 lg:gap-7 pb-5 md:pb-8 border-b'>
                 {/* Img  */}
-                <div className='col-span-12 md:col-span-6 lg:col-span-5 h-[250px] lg:h-[300px] w-full' >
+                <div className='col-span-12 md:col-span-6 lg:col-span-5 h-[250px] sm:h-[300px] lg:h-[300px] w-full' >
                     <div className='relative w-full h-full md:none '>
                         <Image className='rounded-xl' src={projScreenshots[0]} alt='screenShot4' layout='fill' objectFit='cover' objectPosition='center' />
                         <div className='absolute h-full w-full bg-black opacity-5 rounded-xl' />
@@ -66,9 +66,9 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                 </div>
             </div>
             {/* bottom div */}
-            <div className='flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 lg:mt-8'>
+            <div className='flex flex-col md:flex-row items-center  justify-between mt-4 md:mt-6 lg:mt-8'>
                 {/* tech stack */}
-                <div className='flex w-full flex-row items-center justify-between md:justify-start gap-[60px] ' >
+                <div className='flex w-full lg:w-fit flex-row gap-[60px] md:flex-col  md:gap-0 items-center md:items-start justify-between md:justify-start  ' >
                     <p className=' opacity-70 text-lg' >Tech Stack</p>
                     {/* tech stack group  */}
                     <div className='mt-2' >
@@ -82,7 +82,7 @@ export default function SingleProjectBox({projScreenshots,thumbTech,thumTitle,th
                         </div>
                     </div>
                 </div>
-                <button className='bg-myGreen w-full lg:w-fit text-lg pointer mt-8 md:mt-2  bg-opacity-10 hover:bg-opacity-10 text-myGreen font-semibold rounded-md lg:px-[100px] py-5' onClick={() => router.push(`/projects/${thumbURL}`, { scroll: true })} >
+                <button className='bg-myGreen w-full md:w-fit text-lg pointer mt-8 md:mt-2  bg-opacity-10 hover:bg-opacity-10 text-myGreen font-semibold rounded-md md:px-[100px] py-5' onClick={() => router.push(`/projects/${thumbURL}`, { scroll: true })} >
                     Explore
                 </button>
             </div>

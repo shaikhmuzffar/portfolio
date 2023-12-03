@@ -13,7 +13,7 @@ export default function ProjectInfo({sectionData}) {
                 {/* icon */}
                 <div className='flex justify-center items-center h-12 w-12 rounded-full border ' >
                 <div className='relative  h-6 w-6  '>
-                    <Image src={projectCategory} layout='fill' objectFit='cover' alt='projectInfoIcon'  objectPosition='center' />
+                    <Image src={projectCategory} layout='fill' objectFit='contain' alt='projectInfoIcon'  objectPosition='center' />
                 </div>
                 </div>
                 {/* info  */}
@@ -26,8 +26,8 @@ export default function ProjectInfo({sectionData}) {
             <div className='flex gap-4 items-center' >
                 {/* icon */}
                 <div className='flex justify-center items-center h-12 w-12 rounded-full border ' >
-                <div className='relative  h-6 w-6  '>
-                    <Image src={projectType} layout='fill' objectFit='cover' alt='projectInfoIcon' objectPosition='center' />
+                <div className='relative  h-[22px] w-[22px]  '>
+                    <Image src={projectType} layout='fill' objectFit='contain' alt='projectInfoIcon' objectPosition='center' />
                 </div>
                 </div>
                 {/* info  */}

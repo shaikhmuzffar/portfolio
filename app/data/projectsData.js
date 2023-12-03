@@ -80,6 +80,9 @@ const myProjects = [
       "ecommerce",
       "food Delivery",
     ],
+    projGit:"https://github.com/shaikhmuzffar/Doruko---food-delivery-",
+    projDribble:"",
+    projLive:"",
     projInfo: [
       {
         title: "Frontend",
@@ -252,6 +255,9 @@ const myProjects = [
       "ReactJs",
       "CSS3",
     ],
+    projGit:"https://github.com/shaikhmuzffar/Touro-Travel-Website-Frontend-React-Js",
+    projDribble:"",
+    projLive:"https://touro-muzffarshaikh.netlify.app/",
     projInfo: [
       {
         title: "Frontend",
@@ -370,6 +376,9 @@ const myProjects = [
       "NextJs",
       "Tailwind",
     ],
+    projGit:"https://github.com/shaikhmuzffar/Doruko---food-delivery-",
+    projDribble:"",
+    projLive:"https://portfolio-muzffar-shaikhs-projects.vercel.app/",
     projInfo: [
       {
         title: "Frontend",

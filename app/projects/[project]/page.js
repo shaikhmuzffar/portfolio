@@ -37,14 +37,14 @@ export default function Page({params}) {
         <section className=' grid grid-cols-12 gap-y-16 lg:gap-5 ' >
           {/* left */}
           <div className='col-span-12 lg:col-span-8 ' >
-            <LivePreview />
+            <LivePreview projLive={projectData.projLive} />
             <ProjectInfo sectionData={projectData.projInfo} />
             <ProjectDescription sectionData={projectData.projOverview} />
             <ProjectTechStack sectionData={projectData.projTech} />
           </div>
           {/* right */}
           <div className=' col-span-12 lg:col-span-4' >
-            <ProjectLinks />
+            <ProjectLinks projGit={projectData.projGit} />
           </div>
         </section>
         <Achivements sectionData={projectData.achievements} />

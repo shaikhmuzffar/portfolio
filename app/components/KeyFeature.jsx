@@ -7,7 +7,7 @@ import ssrServicesIcon from '../assets/ssrServicesIcon.png'
 export default function KeyFeature({ sectionData }) {
     const [featuresQuantity,setFeaturesQuantity] = useState(4)
     return (
-        <section className='mt-[90px]' >
+        <section className='mt-[90px] text-blackText' >
             <SecondarySectionHeading title={'Key Features'} />
             <div className='mt-[45px]'>
                 {/* key features  */}
@@ -15,9 +15,9 @@ export default function KeyFeature({ sectionData }) {
                     {/* single keyfeatures  */}
                     {
                         sectionData.slice(0, featuresQuantity).map((feature) =>
-                            <li key={feature.title} className='py-3 col-span-2 sm:col-span-1 '>
+                            <li key={feature.title} className='py-2 col-span-2 sm:col-span-1 '>
                                 {/* info  */}
-                                <h1 className='font-medium' >{feature.title}</h1>
+                                <h1 className='opacity-90 ' >{feature.title}</h1>
                             </li>
                         )
                     }
