@@ -55,11 +55,11 @@ const myDetails = [
             },
             {
                 subTitle: "Libraries",
-                subInfo: "React JS, GSAP"
+                subInfo: "React.JS, GSAP"
             },
             {
                 subTitle: "Framework",
-                subInfo: "Next JS, Redux-Toolkit, React-Router"
+                subInfo: "Next.JS, Redux-Toolkit, React-Router,Express.JS,Node.JS"
             },
             {
                 subTitle: "UI Framework",
@@ -67,8 +67,17 @@ const myDetails = [
             },
             {
                 subTitle: "CSS PreProcessors",
-                subInfo: "SASS/SCSS, CSS Modules "
+                subInfo: "SASS/SCSS, CSS Modules"
             },
+            {
+                subTitle: "Database",
+                subInfo: "MongoDB"
+            },
+            {
+                subTitle: "Version control",
+                subInfo: "Git,GitHub"
+            },
+
 
         ]
     },
