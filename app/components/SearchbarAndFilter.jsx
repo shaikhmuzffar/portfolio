@@ -24,7 +24,7 @@ export default function SearchbarAndFilter({onSearchChange}) {
 
         {/* filters */}
         <div className='flex gap-4 md:gap-6' >
-          <select className='form-select font-medium w-25 bg-gray-200 py-1 active:border-none rounded-[4px] outline-none text-[12px] px-2' name="" id="">
+          <select className='form-select font-medium w-25 bg-gray-200 py-1 active:border-none rounded-[4px] outline-none text-[12px] px-2' >
             <option value="">Project type</option>
             <option value="frontend">Frontend</option>
             <option value="backend">Backend</option>
@@ -32,10 +32,11 @@ export default function SearchbarAndFilter({onSearchChange}) {
             <option value="ui design">UI Design</option>
           </select>
 
-          <select className='form-select w-25 font-medium bg-gray-200 py-1 rounded-[4px] outline-none text-[12px] px-2'>
+          <select className='form-select w-25 font-medium bg-gray-200 py-1 rounded-[4px] outline-none text-[12px] px-2' >
             <option value="ecommerce">Project genre</option>
             <option value="ecommerce">E-commerce</option>
             <option value="booking">Booking</option>
+            <option value="personal">Personal</option>
           </select>
         </div>
       </div>

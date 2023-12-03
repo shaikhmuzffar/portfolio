@@ -112,6 +112,8 @@ const myProjects = [
         title: 'React Router'
       },
     ],
+    projectGenre:'ecommerce',
+    projectType:'Frontend',
     projTitle: 'Doruko - Food Delivery Website',
     projScreenshots: [
       dorukoS4, dorukoS3, dorukoS2, dorukoS1
@@ -241,6 +243,8 @@ const myProjects = [
         title: 'React Router'
       },
     ],
+    projectGenre:'booking',
+    projectType:'Frontend',
     projTags: [
       "Touro",
       "travel Website",
@@ -357,6 +361,8 @@ const myProjects = [
         title: 'next Js'
       },
     ],
+    projectGenre:'personal',
+    projectType:'Frontend',
     projTags: [
       "Portfolio",
       "Figma",

@@ -75,7 +75,7 @@ const myDetails = [
             },
             {
                 subTitle: "Version control",
-                subInfo: "Git,GitHub"
+                subInfo: "Git, GitHub"
             },
 
 
